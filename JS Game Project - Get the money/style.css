@@ -1,0 +1,68 @@
+.score{
+    background-image: url(upperlayer.png);
+    padding:3px;
+    width: 894px;
+    font-size: 35px;
+    font-weight: 500;
+    vertical-align: middle;
+    height:35px;
+    margin-bottom: 0px;
+}
+button {
+    padding:20px;
+    font-size:30px;
+    background-color: chocolate;
+    color:white;
+    border-radius:25px;
+}
+.gameBoard{
+    background-color:#dfb987;
+    border-top: 1px solid black;
+    width:900px;
+}
+.hideout{
+    display: inline-block;
+    margin: 10px;
+    width:20%;
+    height:250px;
+    overflow: hidden;
+    position:relative;
+}
+.wall{
+    background-image: url(bricks.png);
+    background-size: 100px;
+    z-index: 100;
+    position: absolute;
+    height: 60px;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+.enemy, .friend{
+    background-size:cover;
+    z-index:1;
+    position: absolute;
+    height:240px;
+    top:240px;
+    left:0px;
+    width:100%;
+    cursor: crosshair;
+    transition: all 0.4s;
+}
+
+.enemy {
+    background-image: url(element1.png);  
+}
+.friend{
+    background-image: url(element2.png);   
+}
+
+
+.hideout.up .enemy{
+    top:0;   
+}
+.hideout.up2 .friend{
+    top:0;   
+}
+
